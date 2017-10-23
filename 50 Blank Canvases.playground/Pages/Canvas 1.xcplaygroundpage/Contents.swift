@@ -13,7 +13,20 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 500, height: 500)
+canvas.translate(byX: 250, byY: 250)
+canvas.fillColor=Color.black
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 5, height: 5)
+canvas.drawAxes()
+
+canvas.drawShapesWithFill=false
+var points : [NSPoint] = []
+points.append(NSPoint(x: 0, y: 0))
+points.append(NSPoint(x: -10, y: 35))
+points.append(NSPoint(x: 0, y: 45))
+points.append(NSPoint(x: 10, y: 35))
+points.append(NSPoint(x: 0, y: 0))
+canvas.drawCustomShape(with: points)
 
 /*:
  ## Add your code below
