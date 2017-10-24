@@ -20,14 +20,23 @@ canvas.drawEllipse(centreX: 0, centreY: 0, width: 5, height: 5)
 canvas.drawAxes()
 
 // Loop 12 times
-canvas.drawShapesWithFill=false
-var points : [NSPoint] = []
-points.append(NSPoint(x: 0, y: 0))
-points.append(NSPoint(x: -10, y: 35))
-points.append(NSPoint(x: 0, y: 45))
-points.append(NSPoint(x: 10, y: 35))
-points.append(NSPoint(x: 0, y: 0))
-canvas.drawCustomShape(with: points)
+for _ in stride(from: 1, through: 12, by: 1) {
+    
+    // Draw the diamond
+    canvas.drawShapesWithFill=false
+    var points : [NSPoint] = []
+    points.append(NSPoint(x: 0, y: 0))
+    points.append(NSPoint(x: -10, y: 35))
+    points.append(NSPoint(x: 0, y: 45))
+    points.append(NSPoint(x: 10, y: 35))
+    points.append(NSPoint(x: 0, y: 0))
+    canvas.drawCustomShape(with: points)
+    
+    //Rotate the canvas
+    canvas.rotate(by: 30)
+
+}
+
 
 /*:
  ## Add your code below
