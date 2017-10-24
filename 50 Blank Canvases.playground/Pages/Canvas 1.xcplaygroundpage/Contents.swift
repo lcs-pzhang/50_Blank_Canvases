@@ -19,6 +19,7 @@ canvas.fillColor=Color.black
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 5, height: 5)
 canvas.drawAxes()
 
+// Loop 12 times
 canvas.drawShapesWithFill=false
 var points : [NSPoint] = []
 points.append(NSPoint(x: 0, y: 0))
