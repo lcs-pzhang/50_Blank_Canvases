@@ -32,6 +32,16 @@ for _ in stride(from: 1, through: 12, by: 1) {
     points.append(NSPoint(x: 0, y: 0))
     canvas.drawCustomShape(with: points)
     
+    
+    // Draw the square
+    canvas.drawShapesWithFill=false
+    var squarePoints : [NSPoint] = []
+    squarePoints.append(NSPoint(x: 0, y: 45))
+    squarePoints.append(NSPoint(x: 15, y: 50))
+    squarePoints.append(NSPoint(x: 20, y: 40))
+    squarePoints.append(NSPoint(x: 10, y: 35))
+
+    canvas.drawCustomShape(with: squarePoints)
     //Rotate the canvas
     canvas.rotate(by: 30)
 
