@@ -40,8 +40,28 @@ for _ in stride(from: 1, through: 12, by: 1) {
     squarePoints.append(NSPoint(x: 15, y: 50))
     squarePoints.append(NSPoint(x: 20, y: 40))
     squarePoints.append(NSPoint(x: 10, y: 35))
-
     canvas.drawCustomShape(with: squarePoints)
+    
+    //Draw the square
+    canvas.drawShapesWithFill=false
+    var diamondPoints : [NSPoint] = []
+    diamondPoints.append(NSPoint(x: 0, y: 45))
+    diamondPoints.append(NSPoint(x: 15 , y: 55))
+    diamondPoints.append(NSPoint(x: 0, y: 70))
+    diamondPoints.append(NSPoint(x: -15, y: 55))
+    canvas.drawCustomShape(with: diamondPoints)
+    
+    //Draw the square
+    canvas.drawShapesWithFill=false
+    rectanglePoints.append(NSPoint(x: 15, y: 55))
+    rectanglePoints.append(NSPoint(x: 25, y: 60))
+    rectanglePoints.append(NSPoint(x: 0, y: 65))
+    rectanglePoints.append(NSPoint(x: 20, y: 75))
+    canvas.drawCustomShape(with: rectanglePoints)
+    
+
+   
+    
     //Rotate the canvas
     canvas.rotate(by: 30)
 
