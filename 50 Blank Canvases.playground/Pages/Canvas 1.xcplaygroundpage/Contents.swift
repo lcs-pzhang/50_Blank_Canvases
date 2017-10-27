@@ -86,8 +86,28 @@ for _ in stride(from: 1, through: 12, by: 1) {
     canvas.drawCustomShape(with: squaPoints)
     
     //Draw the square
+    var rPoints : [NSPoint] = []
+    rPoints.append(NSPoint(x: 40, y: 135))
+    rPoints.append(NSPoint(x: 85, y: 150))
+    rPoints.append(NSPoint(x: 50, y: 190))
+    rPoints.append(NSPoint(x: 0, y: 175))
+    canvas.drawCustomShape(with: rPoints)
     
+    //Draw the square
+    var iPoints : [NSPoint] = []
+    iPoints.append(NSPoint(x: 0, y: 175))
+    iPoints.append(NSPoint(x: 50, y: 190))
+    iPoints.append(NSPoint(x: 0, y: 230))
+    iPoints.append(NSPoint(x: -55, y: 190))
+    canvas.drawCustomShape(with: iPoints)
     
+    //Draw the square
+    var aPoints : [NSPoint] = []
+    aPoints.append(NSPoint(x: 50, y: 195))
+    aPoints.append(NSPoint(x: 115, y: 200))
+    aPoints.append(NSPoint(x: 75, y: 250))
+    aPoints.append(NSPoint(x: 0, y: 230))
+    canvas.drawCustomShape(with: aPoints)
    
     
     //Rotate the canvas
