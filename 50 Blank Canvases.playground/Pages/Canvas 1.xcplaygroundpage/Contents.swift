@@ -53,11 +53,21 @@ for _ in stride(from: 1, through: 12, by: 1) {
     
     //Draw the square
     canvas.drawShapesWithFill=false
-    rectanglePoints.append(NSPoint(x: 15, y: 55))
-    rectanglePoints.append(NSPoint(x: 25, y: 60))
-    rectanglePoints.append(NSPoint(x: 0, y: 65))
-    rectanglePoints.append(NSPoint(x: 20, y: 75))
-    canvas.drawCustomShape(with: rectanglePoints)
+    var rhombusPoints : [NSPoint] = []
+    rhombusPoints.append(NSPoint(x: 0, y: 70))
+    rhombusPoints.append(NSPoint(x: 15, y: 55))
+    rhombusPoints.append(NSPoint(x: 35, y: 60))
+    rhombusPoints.append(NSPoint(x: 25, y: 75))
+    canvas.drawCustomShape(with: rhombusPoints)
+    
+    //Draw the square
+    canvas.drawShapesWithFill=false
+    var diaPoints : [NSPoint] = []
+    diaPoints.append(NSPoint(x: 0, y: 70))
+    diaPoints.append(NSPoint(x: 25, y: 85))
+    diaPoints.append(NSPoint(x: 0, y: 105))
+    diaPoints.append(NSPoint(x: -25, y: 85))
+    canvas.drawCustomShape(with: diaPoints)
     
 
    
