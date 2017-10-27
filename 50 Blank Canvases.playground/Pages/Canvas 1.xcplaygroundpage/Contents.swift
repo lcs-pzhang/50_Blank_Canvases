@@ -66,10 +66,28 @@ for _ in stride(from: 1, through: 12, by: 1) {
     diaPoints.append(NSPoint(x: 0, y: 70))
     diaPoints.append(NSPoint(x: 25, y: 85))
     diaPoints.append(NSPoint(x: 0, y: 105))
-    diaPoints.append(NSPoint(x: -25, y: 85))
+    diaPoints.append(NSPoint(x: -20, y: 85))
     canvas.drawCustomShape(with: diaPoints)
     
-
+    //Draw the square
+    var oPoints : [NSPoint] = []
+    oPoints.append(NSPoint(x: 25, y: 85))
+    oPoints.append(NSPoint(x: 55, y: 95))
+    oPoints.append(NSPoint(x: 40, y: 130))
+    oPoints.append(NSPoint(x: 0, y: 110))
+   canvas.drawCustomShape(with: oPoints)
+    
+    //Draw the square
+    var squaPoints : [NSPoint] = []
+    squaPoints.append(NSPoint(x: 0, y: 115))
+    squaPoints.append(NSPoint(x: 40, y: 130))
+    squaPoints.append(NSPoint(x: 0, y: 170))
+    squaPoints.append(NSPoint(x: -30, y: 135))
+    canvas.drawCustomShape(with: squaPoints)
+    
+    //Draw the square
+    
+    
    
     
     //Rotate the canvas
