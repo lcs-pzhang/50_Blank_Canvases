@@ -13,7 +13,40 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 500, height: 500)
+
+canvas.translate(byX: 250, byY: 250)
+canvas.drawAxes()
+
+// Draw a line
+canvas.defaultLineWidth=10
+canvas.lineColor = Color.init(hue: 141, saturation: 24, brightness: 0, alpha: 100)
+canvas.drawLine(fromX: -50, fromY: -50, toX: 50, toY: 50)
+
+//Draw a circle
+canvas.fillColor = Color(hue: 34, saturation: 100, brightness: 100, alpha: 100)
+canvas.drawEllipse(centreX: 60, centreY: 60, width: 100, height: 100 )
+
+canvas.fillColor=Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+canvas.drawEllipse(centreX: 60, centreY: 60, width: 80, height: 80)
+
+canvas.fillColor = Color(hue: 285, saturation: 100, brightness: 61, alpha: 100)
+canvas.drawEllipse(centreX: 60, centreY: 60, width: 60, height: 60)
+
+canvas.fillColor = Color(hue: 247, saturation: 100, brightness: 64, alpha: 100)
+canvas.drawEllipse(centreX: 60, centreY: 60, width: 40, height: 40)
+
+canvas.fillColor = Color(hue: 137, saturation: 100, brightness: 55, alpha: 100)
+canvas.drawEllipse(centreX: 60, centreY: 60, width: 20, height: 20)
+
+// Draw a line
+canvas.defaultLineWidth=1
+canvas.drawLine(fromX: 20, fromY: 90, toX: 60, toY: 60)
+canvas.drawLine(fromX: 60, fromY: 60, toX: 80, toY: 105)
+canvas.drawLine(fromX: 60, fromY: 60, toX: 110, toY: 60)
+canvas.drawLine(fromX: 60, fromY: 60, toX: 30, toY: 20)
+canvas.drawLine(fromX: 60, fromY: 60, toX: 90, toY: 15)
+
 
 /*:
  ## Add your code below
