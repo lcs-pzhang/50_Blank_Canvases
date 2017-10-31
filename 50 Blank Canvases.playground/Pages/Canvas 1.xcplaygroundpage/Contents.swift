@@ -17,13 +17,12 @@ let canvas = Canvas(width: 500, height: 500)
 canvas.translate(byX: 250, byY: 250)
 canvas.fillColor=Color.black
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 5, height: 5)
-canvas.drawAxes()
 
 // Loop 12 times
 for _ in stride(from: 1, through: 12, by: 1) {
     
     // Draw the diamond
-    canvas.drawShapesWithFill=false
+    canvas.fillColor = Color.yellow
     var points : [NSPoint] = []
     points.append(NSPoint(x: 0, y: 0))
     points.append(NSPoint(x: -10, y: 35))
@@ -34,16 +33,17 @@ for _ in stride(from: 1, through: 12, by: 1) {
     
     
     // Draw the square
-    canvas.drawShapesWithFill=false
+    canvas.fillColor = Color.red
     var squarePoints : [NSPoint] = []
     squarePoints.append(NSPoint(x: 0, y: 45))
     squarePoints.append(NSPoint(x: 15, y: 50))
     squarePoints.append(NSPoint(x: 20, y: 40))
     squarePoints.append(NSPoint(x: 10, y: 35))
+    squarePoints.append(NSPoint(x: 0, y: 45))
     canvas.drawCustomShape(with: squarePoints)
     
     //Draw the square
-    canvas.drawShapesWithFill=false
+    canvas.fillColor = Color.blue
     var diamondPoints : [NSPoint] = []
     diamondPoints.append(NSPoint(x: 0, y: 45))
     diamondPoints.append(NSPoint(x: 15 , y: 55))
@@ -52,7 +52,7 @@ for _ in stride(from: 1, through: 12, by: 1) {
     canvas.drawCustomShape(with: diamondPoints)
     
     //Draw the square
-    canvas.drawShapesWithFill=false
+    canvas.fillColor = Color.green
     var rhombusPoints : [NSPoint] = []
     rhombusPoints.append(NSPoint(x: 0, y: 70))
     rhombusPoints.append(NSPoint(x: 15, y: 55))
@@ -61,7 +61,7 @@ for _ in stride(from: 1, through: 12, by: 1) {
     canvas.drawCustomShape(with: rhombusPoints)
     
     //Draw the square
-    canvas.drawShapesWithFill=false
+    canvas.fillColor = Color.purple
     var diaPoints : [NSPoint] = []
     diaPoints.append(NSPoint(x: 0, y: 70))
     diaPoints.append(NSPoint(x: 25, y: 85))
@@ -70,6 +70,7 @@ for _ in stride(from: 1, through: 12, by: 1) {
     canvas.drawCustomShape(with: diaPoints)
     
     //Draw the square
+    canvas.fillColor = Color.orange
     var oPoints : [NSPoint] = []
     oPoints.append(NSPoint(x: 25, y: 85))
     oPoints.append(NSPoint(x: 55, y: 95))
@@ -78,6 +79,7 @@ for _ in stride(from: 1, through: 12, by: 1) {
    canvas.drawCustomShape(with: oPoints)
     
     //Draw the square
+    canvas.fillColor = Color.red
     var squaPoints : [NSPoint] = []
     squaPoints.append(NSPoint(x: 0, y: 115))
     squaPoints.append(NSPoint(x: 40, y: 130))
@@ -86,6 +88,7 @@ for _ in stride(from: 1, through: 12, by: 1) {
     canvas.drawCustomShape(with: squaPoints)
     
     //Draw the square
+    canvas.fillColor = Color.blue
     var rPoints : [NSPoint] = []
     rPoints.append(NSPoint(x: 40, y: 135))
     rPoints.append(NSPoint(x: 85, y: 150))
@@ -94,6 +97,7 @@ for _ in stride(from: 1, through: 12, by: 1) {
     canvas.drawCustomShape(with: rPoints)
     
     //Draw the square
+    canvas.fillColor = Color.green
     var iPoints : [NSPoint] = []
     iPoints.append(NSPoint(x: 0, y: 175))
     iPoints.append(NSPoint(x: 50, y: 190))
@@ -102,6 +106,7 @@ for _ in stride(from: 1, through: 12, by: 1) {
     canvas.drawCustomShape(with: iPoints)
     
     //Draw the square
+    canvas.fillColor = Color.yellow
     var aPoints : [NSPoint] = []
     aPoints.append(NSPoint(x: 50, y: 195))
     aPoints.append(NSPoint(x: 115, y: 200))
