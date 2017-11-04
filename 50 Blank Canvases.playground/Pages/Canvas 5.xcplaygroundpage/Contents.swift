@@ -83,6 +83,18 @@ canvas.drawLine(fromX: -23, fromY: 190, toX: -20, toY: 180)
 canvas.drawLine(fromX: -20, fromY: 190, toX: -23, toY: 180)
 canvas.drawLine(fromX: -18, fromY: 190, toX: -18, toY: 180)
 
+// Draw a circle
+canvas.fillColor=Color.init(hue: 18, saturation: 70, brightness: 90, alpha: 100)
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 95, height: 95)
+
+// Draw an ellipse
+canvas.fillColor=Color.init(hue: 18, saturation: 0, brightness: 50, alpha: 100)
+canvas.drawEllipse(centreX: -80, centreY: 200, width: 35, height: 20)
+canvas.drawEllipse(centreX: 80, centreY: 230, width: 35, height: 20)
+canvas.drawEllipse(centreX: 130, centreY: 195, width: 35, height: 20)
+canvas.drawEllipse(centreX: -160, centreY: 120, width: 35, height: 20)
+canvas.drawEllipse(centreX: -100, centreY: 90, width: 35, height: 20)
+canvas.drawEllipse(centreX: 80, centreY: 120 , width: 35, height: 20)
 /*:
  ## Add your code below
  
