@@ -161,6 +161,22 @@ canvas.drawEllipse(centreX: -100, centreY: -135, width: 35, height: 10)
 canvas.drawEllipse(centreX: -120, centreY: -105, width: 10, height: 35)
 canvas.drawEllipse(centreX: -80, centreY: -105, width: 10, height: 35)
 
+canvas.fillColor=Color.purple
+canvas.drawEllipse(centreX: -200, centreY: -230, width: 25, height: 25)
+canvas.lineColor=Color.init(hue: 280, saturation: 70, brightness: 90, alpha: 100)
+canvas.defaultLineWidth=10
+canvas.drawLine(fromX: -170, fromY: -230, toX: -150, toY: -220)
+canvas.lineColor=Color.black
+canvas.defaultLineWidth=10
+canvas.drawLine(fromX: -150, fromY: -210, toX: -145, toY: -225)
+canvas.lineColor=Color.init(hue: 280, saturation: 60, brightness: 100, alpha: 100)
+canvas.defaultLineWidth=15
+canvas.drawLine(fromX: -137, fromY: -215, toX: -100, toY: -200)
+
+canvas.lineColor=Color.init(hue: 280, saturation: 60, brightness: 100, alpha: 100)
+canvas.fillColor=Color.init(hue: 280, saturation: 60, brightness: 100, alpha: 100)
+var tippoints : [NSPoint] = []
+tippoints.append(NSPoint(x: <#T##Int#>, y: <#T##Int#>))
 
 
 
