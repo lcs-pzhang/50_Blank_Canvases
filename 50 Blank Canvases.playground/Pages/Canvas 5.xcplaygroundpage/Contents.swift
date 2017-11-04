@@ -148,7 +148,21 @@ canvas.drawLine(fromX: -120, fromY: -55, toX: -120, toY: -65)
 canvas.drawLine(fromX: -115, fromY: -40, toX: -70, toY: -40)
 canvas.drawLine(fromX: -110, fromY: -30, toX: -110, toY: -45)
 canvas.drawLine(fromX: -80, fromY: -30, toX: -80, toY: -55)
-canvas.drawLine(fromX: -95, fromY: -30, toX: -95, toY: -65)
+canvas.drawLine(fromX: -95, fromY: -30, toX: -95, toY: -60)
+
+canvas.fillColor=Color.init(hue: 57, saturation: 97, brightness: 100, alpha: 100)
+canvas.drawEllipse(centreX: -100, centreY: -75, width: 50, height: 20)
+canvas.drawEllipse(centreX: -100, centreY: -135, width: 50, height: 20)
+canvas.drawEllipse(centreX: -120, centreY: -105, width: 20, height: 50)
+canvas.drawEllipse(centreX: -80, centreY: -105, width: 20, height: 50)
+canvas.fillColor=Color.white
+canvas.drawEllipse(centreX: -100, centreY: -75, width: 35, height: 10)
+canvas.drawEllipse(centreX: -100, centreY: -135, width: 35, height: 10)
+canvas.drawEllipse(centreX: -120, centreY: -105, width: 10, height: 35)
+canvas.drawEllipse(centreX: -80, centreY: -105, width: 10, height: 35)
+
+
+
 
 
 
