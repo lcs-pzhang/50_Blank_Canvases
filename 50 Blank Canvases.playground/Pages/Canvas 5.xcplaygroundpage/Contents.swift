@@ -85,16 +85,16 @@ canvas.drawLine(fromX: -18, fromY: 190, toX: -18, toY: 180)
 
 // Draw a circle
 canvas.fillColor=Color.init(hue: 18, saturation: 70, brightness: 90, alpha: 100)
-canvas.drawEllipse(centreX: 0, centreY: 0, width: 95, height: 95)
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 55, height: 55)
 
 // Draw an ellipse
 canvas.fillColor=Color.init(hue: 18, saturation: 0, brightness: 50, alpha: 100)
 canvas.drawEllipse(centreX: -80, centreY: 200, width: 35, height: 20)
 canvas.drawEllipse(centreX: 80, centreY: 230, width: 35, height: 20)
 canvas.drawEllipse(centreX: 130, centreY: 195, width: 35, height: 20)
-canvas.drawEllipse(centreX: -160, centreY: 120, width: 35, height: 20)
-canvas.drawEllipse(centreX: -100, centreY: 90, width: 35, height: 20)
-canvas.drawEllipse(centreX: 160, centreY: 120 , width: 35, height: 20)
+canvas.drawEllipse(centreX: -160, centreY: 150, width: 35, height: 20)
+canvas.drawEllipse(centreX: -100, centreY: 120, width: 35, height: 20)
+canvas.drawEllipse(centreX: 160, centreY: 150 , width: 35, height: 20)
 
 // Draw a line
 canvas.lineColor=Color.init(hue: 0, saturation: 0, brightness: 50, alpha: 100)
@@ -102,15 +102,60 @@ canvas.defaultLineWidth=7
 canvas.drawLine(fromX: -70, fromY: 205, toX: -70, toY: 240)
 canvas.drawLine(fromX: -70, fromY: 240, toX: -40, toY: 230)
 canvas.drawLine(fromX: -40, fromY: 230, toX: -55, toY: 220)
-canvas.drawLine(fromX: 150, fromY: 123, toX: 150, toY: 80)
-canvas.drawLine(fromX: 150, fromY: 80, toX: 170, toY: 90)
-canvas.drawLine(fromX: -145, fromY: 125, toX: -145, toY: 165)
-canvas.drawLine(fromX: -85, fromY: 95, toX: -85, toY: 135)
-canvas.drawLine(fromX: -145, fromY: 165, toX: -85, toY: 135)
-canvas.drawLine(fromX: -145, fromY: 155, toX: -85, toY: 125)
+canvas.drawLine(fromX: 150, fromY: 153, toX: 150, toY: 110)
+canvas.drawLine(fromX: 150, fromY: 110, toX: 170, toY: 125)
+canvas.drawLine(fromX: -145, fromY: 155, toX: -145, toY: 195)
+canvas.drawLine(fromX: -85, fromY: 125, toX: -85, toY: 165)
+canvas.drawLine(fromX: -145, fromY: 195, toX: -85, toY: 165)
+canvas.drawLine(fromX: -145, fromY: 185, toX: -85, toY: 155)
 canvas.drawLine(fromX: 68, fromY: 230, toX: 68, toY: 190)
 canvas.drawLine(fromX: 118, fromY: 195, toX: 118, toY: 165)
-canvas.drawLine(fromX: 68, fromY: 190, toX: 118, toY: 165)
+canvas.drawLine(fromX: 68, fromY: 195, toX: 118, toY: 160)
+
+
+canvas.drawShapesWithBorders=false
+canvas.fillColor=Color.init(hue: 57, saturation: 97, brightness: 100, alpha: 100)
+canvas.drawEllipse(centreX: -190, centreY: -90, width: 30, height: 30)
+
+canvas.defaultLineWidth=3
+canvas.fillColor=Color.init(hue: 57, saturation: 97, brightness: 100, alpha: 100)
+canvas.lineColor=Color.init(hue: 57, saturation: 97, brightness: 100, alpha: 100)
+var tripoints : [NSPoint] = []
+tripoints.append(NSPoint(x: -160, y: -40))
+tripoints.append(NSPoint(x: -120, y: -45))
+tripoints.append(NSPoint(x: -110, y: -55))
+tripoints.append(NSPoint(x: -140, y: -80))
+tripoints.append(NSPoint(x: -170, y: -50))
+canvas.drawCustomShape(with: tripoints)
+
+var gempoints : [NSPoint] = []
+gempoints.append(NSPoint(x: -110, y: -30))
+gempoints.append(NSPoint(x: -80, y: -30))
+gempoints.append(NSPoint(x: -70, y: -40))
+gempoints.append(NSPoint(x: -90, y: -65))
+gempoints.append(NSPoint(x: -115, y: -40))
+canvas.drawCustomShape(with: gempoints)
+
+canvas.defaultLineWidth=1
+canvas.lineColor=Color.black
+canvas.drawLine(fromX: -170, fromY: -50, toX: -110, toY: -55)
+canvas.drawLine(fromX: -155, fromY: -40, toX: -155, toY: -50)
+canvas.drawLine(fromX: -120, fromY: -45, toX: -120, toY: -55)
+canvas.drawLine(fromX: -140, fromY: -42, toX: -140, toY: -55)
+canvas.drawLine(fromX: -140, fromY: -42, toX: -140, toY: -80)
+canvas.drawLine(fromX: -155, fromY: -50, toX: -155, toY: -65)
+canvas.drawLine(fromX: -120, fromY: -55, toX: -120, toY: -65)
+canvas.drawLine(fromX: -115, fromY: -40, toX: -70, toY: -40)
+canvas.drawLine(fromX: -110, fromY: -30, toX: -110, toY: -45)
+canvas.drawLine(fromX: -80, fromY: -30, toX: -80, toY: -55)
+canvas.drawLine(fromX: -95, fromY: -30, toX: -95, toY: -65)
+
+
+
+
+
+
+
 /*:
  ## Add your code below
  
