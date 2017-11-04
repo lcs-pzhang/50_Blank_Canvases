@@ -30,14 +30,36 @@ canvas.drawRectangle(centreX: 0, centreY: 0, width: 100, height: 200)
 var points : [NSPoint] = []
 points.append(NSPoint(x: 0, y: 100))
 points.append(NSPoint(x: 75, y: 150))
-points.append(NSPoint(x: 0, y: 200))
+points.append(NSPoint(x: 0, y: 210))
 points.append(NSPoint(x: -75, y: 150))
 canvas.drawCustomShape(with: points)
 
 // Draw a circle
 canvas.fillColor=Color.init(hue: 56, saturation: 90, brightness: 100, alpha: 100)
-canvas.drawEllipse(centreX: 0, centreY: 150, width: 75, height: 75)
+canvas.drawEllipse(centreX: 0, centreY: 155, width: 85, height: 85)
 
+// Draw a line
+canvas.lineColor=Color.red
+canvas.defaultLineWidth=1
+canvas.drawLine(fromX: 0, fromY: 160, toX: -20, toY: 190)
+canvas.drawLine(fromX: 0, fromY: 160, toX: -5, toY: 185)
+
+// Draw a line
+canvas.lineColor=Color.green
+canvas.defaultLineWidth=1
+canvas.drawLine(fromX: -5, fromY: 195, toX: 0, toY: 185)
+canvas.drawLine(fromX: 0, fromY: 195, toX: -5, toY: 185)
+canvas.drawLine(fromX: 4, fromY: 195, toX: 4, toY: 185)
+canvas.drawLine(fromX: 1, fromY: 195, toX: 1, toY: 185)
+canvas.drawLine(fromX: -3, fromY: 125, toX: 0, toY: 115)
+canvas.drawLine(fromX: 0, fromY: 115, toX: 3, toY: 125)
+canvas.drawLine(fromX: 5, fromY: 125, toX: 5, toY: 115)
+canvas.drawLine(fromX: 33, fromY: 160, toX: 33, toY: 150)
+canvas.drawLine(fromX: 36, fromY: 160, toX: 36, toY: 150)
+canvas.drawLine(fromX: 39, fromY: 160, toX: 39, toY: 150)
+canvas.drawLine(fromX: -39, fromY: 160, toX: -39, toY: 150)
+canvas.drawLine(fromX: -37, fromY: 160, toX: -32, toY: 150)
+canvas.drawLine(fromX: -32, fromY: 160, toX: -37, toY: 150)
 /*:
  ## Add your code below
  
