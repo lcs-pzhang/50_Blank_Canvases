@@ -169,14 +169,47 @@ canvas.drawLine(fromX: -170, fromY: -230, toX: -150, toY: -220)
 canvas.lineColor=Color.black
 canvas.defaultLineWidth=10
 canvas.drawLine(fromX: -150, fromY: -210, toX: -145, toY: -225)
-canvas.lineColor=Color.init(hue: 280, saturation: 60, brightness: 100, alpha: 100)
+canvas.lineColor=Color.init(hue: 280, saturation: 20, brightness: 100, alpha: 100)
 canvas.defaultLineWidth=15
 canvas.drawLine(fromX: -137, fromY: -215, toX: -100, toY: -200)
 
-canvas.lineColor=Color.init(hue: 280, saturation: 60, brightness: 100, alpha: 100)
-canvas.fillColor=Color.init(hue: 280, saturation: 60, brightness: 100, alpha: 100)
-var tippoints : [NSPoint] = []
-tippoints.append(NSPoint(x: <#T##Int#>, y: <#T##Int#>))
+canvas.fillColor=Color.init(hue: 280, saturation: 40, brightness: 100, alpha: 100)
+canvas.drawEllipse(centreX: -40, centreY: -200, width: 40, height: 30)
+
+canvas.fillColor=Color.init(hue: 280, saturation: 40, brightness: 100, alpha: 100)
+canvas.drawEllipse(centreX: -65, centreY: -190, width: 30, height: 20)
+canvas.drawEllipse(centreX: -20, centreY: -210, width: 30, height: 20)
+canvas.drawEllipse(centreX: -20, centreY: -190, width: 30, height: 20)
+canvas.drawEllipse(centreX: -65, centreY: -210, width: 30, height: 20)
+canvas.drawEllipse(centreX: -40, centreY: -180, width: 30, height: 20)
+canvas.drawEllipse(centreX: -40, centreY: -220, width: 30, height: 20)
+
+// Draw a line
+canvas.defaultLineWidth=5
+canvas.lineColor=Color.init(hue: 122, saturation: 86, brightness: 40, alpha: 100)
+canvas.drawLine(fromX: -40, fromY: -230, toX: -40, toY: -250)
+
+canvas.fillColor=Color.init(hue: 305, saturation: 86, brightness: 100, alpha: 100)
+canvas.drawEllipse(centreX: 170, centreY: -70, width: 125, height: 25)
+canvas.drawEllipse(centreX: 230, centreY: -20, width: 25, height: 25)
+
+canvas.fillColor=Color.init(hue: 305, saturation: 86, brightness: 85, alpha: 100)
+canvas.drawEllipse(centreX: 170, centreY: -70, width: 100, height: 25)
+
+canvas.fillColor=Color.init(hue: 305, saturation: 86, brightness: 70, alpha: 100)
+canvas.drawEllipse(centreX: 170, centreY: -70, width: 75, height: 25)
+
+canvas.fillColor=Color.init(hue: 344, saturation: 86, brightness: 90, alpha: 100)
+canvas.drawEllipse(centreX: 170, centreY: -10, width: 5, height: 5)
+canvas.drawEllipse(centreX: 170, centreY: -30, width: 5, height: 5)
+canvas.drawEllipse(centreX: 170, centreY: -50, width: 5, height: 5)
+canvas.drawEllipse(centreX: 170, centreY: -70, width: 5, height: 5)
+
+
+
+
+
+
 
 
 
