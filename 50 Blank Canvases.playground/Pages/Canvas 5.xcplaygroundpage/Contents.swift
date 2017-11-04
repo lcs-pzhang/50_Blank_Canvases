@@ -180,7 +180,7 @@ canvas.fillColor=Color.init(hue: 280, saturation: 40, brightness: 100, alpha: 10
 canvas.drawEllipse(centreX: -65, centreY: -190, width: 30, height: 20)
 canvas.drawEllipse(centreX: -20, centreY: -210, width: 30, height: 20)
 canvas.drawEllipse(centreX: -20, centreY: -190, width: 30, height: 20)
-canvas.drawEllipse(centreX: -65, centreY: -210, width: 30, height: 20)
+canvas.drawEllipse(centreX: -60, centreY: -205, width: 30, height: 20)
 canvas.drawEllipse(centreX: -40, centreY: -180, width: 30, height: 20)
 canvas.drawEllipse(centreX: -40, centreY: -220, width: 30, height: 20)
 
@@ -204,6 +204,49 @@ canvas.drawEllipse(centreX: 170, centreY: -10, width: 5, height: 5)
 canvas.drawEllipse(centreX: 170, centreY: -30, width: 5, height: 5)
 canvas.drawEllipse(centreX: 170, centreY: -50, width: 5, height: 5)
 canvas.drawEllipse(centreX: 170, centreY: -70, width: 5, height: 5)
+
+canvas.fillColor=Color.init(hue: 1, saturation: 0, brightness: 90, alpha: 100)
+canvas.drawEllipse(centreX: 80, centreY: -70, width: 30, height: 70)
+
+canvas.fillColor = Color.white
+canvas.drawEllipse(centreX: 80, centreY: -90, width: 10, height: 30)
+canvas.drawEllipse(centreX: 80, centreY: -55, width: 15, height: 20)
+
+// Draw a circle
+canvas.fillColor=Color.red
+canvas.drawEllipse(centreX: 50, centreY: -200, width: 60, height: 60)
+canvas.drawEllipse(centreX: 230, centreY: -230, width: 25, height: 25)
+
+canvas.fillColor=Color.white
+canvas.drawEllipse(centreX: 60, centreY: -200, width: 35, height: 35)
+
+canvas.fillColor=Color.init(hue: 1, saturation: 85, brightness: 70, alpha: 100)
+canvas.drawEllipse(centreX: 70, centreY: -210, width: 15, height: 15)
+canvas.drawEllipse(centreX: 65, centreY: -210, width: 15, height: 15)
+canvas.drawEllipse(centreX: 70, centreY: -200, width: 15, height: 15)
+canvas.drawEllipse(centreX: 70, centreY: -190, width: 15, height: 15)
+canvas.drawEllipse(centreX: 50, centreY: -195, width: 15, height: 15)
+canvas.drawEllipse(centreX: 60, centreY: -200, width: 15, height: 15)
+canvas.drawEllipse(centreX: 55, centreY: -210, width: 15, height: 15)
+canvas.drawEllipse(centreX: 60, centreY: -210, width: 15, height: 15)
+canvas.drawEllipse(centreX: 60, centreY: -185, width: 15, height: 15)
+canvas.drawEllipse(centreX: 50, centreY: -205, width: 15, height: 15)
+
+canvas.fillColor=Color.init(hue: 1, saturation: 40, brightness: 100, alpha: 100)
+canvas.drawEllipse(centreX: 110, centreY: -160, width: 50, height: 30)
+
+canvas.lineColor=Color.init(hue: 1, saturation: 40, brightness: 100, alpha: 100)
+canvas.drawLine(fromX: 90, fromY: -165, toX: 110, toY: -200)
+canvas.drawLine(fromX: 130, fromY: -165, toX: 110, toY: -200)
+canvas.drawLine(fromX: 110, fromY: -200, toX: 110, toY: -235)
+canvas.drawEllipse(centreX: 110, centreY: -235, width: 30, height: 10)
+
+canvas.fillColor=Color.white
+canvas.drawEllipse(centreX: 110, centreY: -160, width: 45, height: 25)
+
+
+
+
 
 
 
