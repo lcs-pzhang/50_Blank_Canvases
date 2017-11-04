@@ -94,7 +94,23 @@ canvas.drawEllipse(centreX: 80, centreY: 230, width: 35, height: 20)
 canvas.drawEllipse(centreX: 130, centreY: 195, width: 35, height: 20)
 canvas.drawEllipse(centreX: -160, centreY: 120, width: 35, height: 20)
 canvas.drawEllipse(centreX: -100, centreY: 90, width: 35, height: 20)
-canvas.drawEllipse(centreX: 80, centreY: 120 , width: 35, height: 20)
+canvas.drawEllipse(centreX: 160, centreY: 120 , width: 35, height: 20)
+
+// Draw a line
+canvas.lineColor=Color.init(hue: 0, saturation: 0, brightness: 50, alpha: 100)
+canvas.defaultLineWidth=7
+canvas.drawLine(fromX: -70, fromY: 205, toX: -70, toY: 240)
+canvas.drawLine(fromX: -70, fromY: 240, toX: -40, toY: 230)
+canvas.drawLine(fromX: -40, fromY: 230, toX: -55, toY: 220)
+canvas.drawLine(fromX: 150, fromY: 123, toX: 150, toY: 80)
+canvas.drawLine(fromX: 150, fromY: 80, toX: 170, toY: 90)
+canvas.drawLine(fromX: -145, fromY: 125, toX: -145, toY: 165)
+canvas.drawLine(fromX: -85, fromY: 95, toX: -85, toY: 135)
+canvas.drawLine(fromX: -145, fromY: 165, toX: -85, toY: 135)
+canvas.drawLine(fromX: -145, fromY: 155, toX: -85, toY: 125)
+canvas.drawLine(fromX: 68, fromY: 230, toX: 68, toY: 190)
+canvas.drawLine(fromX: 118, fromY: 195, toX: 118, toY: 165)
+canvas.drawLine(fromX: 68, fromY: 190, toX: 118, toY: 165)
 /*:
  ## Add your code below
  
