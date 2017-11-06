@@ -297,6 +297,10 @@ canvas.drawLine(fromX: -45, fromY: 70, toX: -40, toY: 60)
 canvas.fillColor=Color.init(hue: 164, saturation: 90, brightness: 90, alpha: 100)
 canvas.drawEllipse(centreX: -200, centreY: 60, width: 30, height: 30)
 
+canvas.fillColor=Color.init(hue: 182, saturation: 100, brightness: 85, alpha: 100)
+
+canvas.drawEllipse(centreX: -130, centreY: 90, width: 50, height: 40)
+
 canvas.fillColor=Color.init(hue: 38, saturation: 50, brightness: 100, alpha: 100)
 
 canvas.drawEllipse(centreX: -130, centreY: 85, width: 30, height: 30)
