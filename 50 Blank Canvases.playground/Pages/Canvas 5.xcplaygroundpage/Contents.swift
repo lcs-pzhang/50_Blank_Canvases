@@ -16,9 +16,11 @@ import PlaygroundSupport
 let canvas = Canvas(width: 500, height: 500)
 
 canvas.translate(byX: 250, byY: 250)
-canvas.drawAxes()
 
-// Draw a tower base
+canvas.fillColor=Color.init(hue: 134, saturation: 80, brightness: 55, alpha: 100)
+canvas.drawRectangle(centreX: 0, centreY: 0, width: 500, height: 500)
+
+// Draw the tower base
 canvas.fillColor = Color.black
 canvas.defaultLineWidth=5
 canvas.drawLine(fromX: -50, fromY: 100, toX: -50, toY: -100)
@@ -35,7 +37,7 @@ points.append(NSPoint(x: 0, y: 210))
 points.append(NSPoint(x: -75, y: 150))
 canvas.drawCustomShape(with: points)
 
-// Draw a circle
+// Draw the clock
 canvas.fillColor=Color.init(hue: 56, saturation: 90, brightness: 100, alpha: 100)
 canvas.drawEllipse(centreX: 0, centreY: 155, width: 85, height: 85)
 
@@ -87,8 +89,19 @@ canvas.drawLine(fromX: -18, fromY: 190, toX: -18, toY: 180)
 // Draw a  the orange original circle
 canvas.fillColor=Color.init(hue: 18, saturation: 70, brightness: 90, alpha: 100)
 canvas.drawEllipse(centreX: 0, centreY: -20, width: 50, height: 50)
+canvas.lineColor=Color.black
+canvas.defaultLineWidth=1
+canvas.drawLine(fromX: 0, fromY: 15, toX: 0, toY: -20)
+canvas.drawLine(fromX: 0, fromY: -20, toX: 25, toY: -5)
+canvas.drawLine(fromX: 0, fromY: -20, toX: -25, toY: -5)
+canvas.drawLine(fromX: 0, fromY: -20, toX: -25, toY: -30)
+canvas.drawLine(fromX: 0, fromY: -20, toX: 25, toY: -30)
+canvas.drawLine(fromX: 0, fromY: -20, toX: 10, toY: -45)
+canvas.drawLine(fromX: 0, fromY: -20, toX: -15, toY: -45)
+
 
 // Draw the music notes
+canvas.drawShapesWithBorders=false
 canvas.fillColor=Color.init(hue: 18, saturation: 0, brightness: 50, alpha: 100)
 canvas.drawEllipse(centreX: -80, centreY: 200, width: 35, height: 20)
 canvas.drawEllipse(centreX: 80, centreY: 230, width: 35, height: 20)
@@ -219,7 +232,7 @@ canvas.drawEllipse(centreX: 170, centreY: -70, width: 5, height: 5)
 canvas.fillColor=Color.init(hue: 1, saturation: 0, brightness: 90, alpha: 100)
 canvas.drawEllipse(centreX: 80, centreY: -70, width: 30, height: 70)
 
-canvas.fillColor = Color.white
+canvas.fillColor = Color.init(hue: 134, saturation: 80, brightness: 55, alpha: 100)
 canvas.drawEllipse(centreX: 80, centreY: -90, width: 10, height: 30)
 canvas.drawEllipse(centreX: 80, centreY: -55, width: 15, height: 20)
 
@@ -254,7 +267,7 @@ canvas.drawLine(fromX: 130, fromY: -165, toX: 110, toY: -200)
 canvas.drawLine(fromX: 110, fromY: -200, toX: 110, toY: -235)
 canvas.drawEllipse(centreX: 110, centreY: -235, width: 30, height: 10)
 
-canvas.fillColor=Color.white
+canvas.fillColor=Color.init(hue: 134, saturation: 80, brightness: 55, alpha: 100)
 canvas.drawEllipse(centreX: 110, centreY: -160, width: 45, height: 25)
 
 // Draw the hourglass
@@ -314,6 +327,13 @@ canvas.drawLine(fromX: -45, fromY: 70, toX: -40, toY: 60)
 canvas.fillColor=Color.init(hue: 164, saturation: 90, brightness: 90, alpha: 100)
 canvas.drawEllipse(centreX: -200, centreY: 60, width: 30, height: 30)
 
+//Draw the wind
+canvas.fillColor=Color.init(hue: 171, saturation: 15, brightness: 100, alpha: 100)
+
+canvas.drawEllipse(centreX: -115, centreY: 65, width: 35, height: 90)
+canvas.drawEllipse(centreX: -125, centreY: 40, width: 45, height: 45)
+
+
 //Draw the doll
 canvas.fillColor=Color.init(hue: 182, saturation: 100, brightness: 85, alpha: 100)
 
@@ -334,6 +354,12 @@ canvas.drawEllipse(centreX: -120, centreY: 57, width: 30, height: 10)
 canvas.fillColor=Color.init(hue: 171, saturation: 80, brightness: 90, alpha: 100)
 canvas.drawEllipse(centreX: -135, centreY: 28, width: 5, height: 10)
 canvas.drawEllipse(centreX: -125, centreY: 28, width: 5, height: 10)
+
+canvas.fillColor=Color.black
+canvas.drawEllipse(centreX: -135, centreY: 85, width: 7, height: 7)
+canvas.drawEllipse(centreX: -125, centreY: 85, width: 7, height: 7)
+
+
 
 
 
